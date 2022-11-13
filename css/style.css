@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(218, 102, 102);
+}
+.Titulo-1 h1 {
+  font-size: 4.5rem;
+
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+}
+.parrafo-1 p {
+  color: rgb(255, 85, 85);
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: center;
+  line-height: 2;
+  background-image: url(../imagenes/Got.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.img-grogu {
+  height: 300px;
+}
+.img-pacman {
+  height: 300px;
+}
+.img-cap {
+  height: 300px;
+}
+footer {
+  background-color: rgb(218, 102, 102);
+}
+.nav__list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 2rem;
+}
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-around;
+}
