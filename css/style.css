@@ -4,49 +4,144 @@
   box-sizing: border-box;
 }
 header {
+  width: 100%;
+  height: 100px;
   background-color: rgb(218, 102, 102);
 }
-.Titulo-1 h1 {
-  font-size: 4.5rem;
-
-  font-style: italic;
-  text-align: center;
-  text-decoration: underline;
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.parrafo-1 p {
-  color: rgb(255, 85, 85);
+.logo-Nav {
+  width: 350px;
+  height: 100px;
+}
+.logo-Nav a img {
+  height: 100px;
+  width: 350px;
+}
+.nav-links ul {
+  width: 700px;
+  height: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: aqua;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.nav-links ul li a:hover {
+  color: blue;
+}
+
+.hero-contenedor {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(../imagenes/montañahero.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
+}
+.titulo-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+.titulo-hero h1 {
+  width: 300px;
+  height: 50px;
+  color: red;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   font-size: 2.5rem;
   font-weight: bold;
 
+  border-bottom: 4px solid rgb(14, 13, 13);
+}
+.parrafo-hero {
+  width: 100%;
+  height: 300px;
+}
+.parrafo-hero p {
+  color: rgb(255, 85, 85);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 10px;
   font-family: "Comic Sans MS", sans-serif;
   text-align: center;
   line-height: 2;
-  background-image: url(../imagenes/Got.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-.img-grogu {
+.contenedor-novedades {
+  width: 100%;
+  height: 1000px;
+  background-color: burlywood;
+}
+.contenedor-cards {
+  width: 100%;
+  height: 600px;
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+.cards:hover {
+  width: 300px;
+  height: 450px;
+}
+.cards img {
+  width: 350px;
   height: 300px;
 }
-.img-pacman {
-  height: 300px;
+.cards p {
+  font-size: 15px;
+  text-align: center;
+  color: red;
+  margin-top: 5px;
 }
-.img-cap {
-  height: 300px;
-}
+
 footer {
   background-color: rgb(218, 102, 102);
 }
-.nav__list {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-size: 2rem;
-}
+
 .contenedor-imagenes {
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 1050px) {
+  .cards p {
+    font-size: 5px;
+  }
 }
