@@ -6,7 +6,7 @@
 header {
   width: 100%;
   height: 100px;
-  background-color: rgb(218, 102, 102);
+  background-color: rgb(240, 97, 97);
 }
 nav {
   width: 100%;
@@ -14,33 +14,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.logo-Nav {
-  width: 350px;
-  height: 100px;
-}
-.logo-Nav a img {
-  height: 100px;
-  width: 350px;
-}
-.nav-links ul {
-  width: 700px;
-  height: 100px;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: aqua;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
-}
-.nav-links ul li a:hover {
-  color: blue;
+  background-color: black;
 }
 
 .hero-contenedor {
@@ -140,4 +114,16 @@ footer {
   .cards p {
     font-size: 5px;
   }
+}
+@media screen and (max-width: 900px) {
+  .cards:hover {
+    width: 0px;
+    height: 0px;
+  }
+  .cards img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 620px) {
 }
