@@ -171,12 +171,10 @@ textarea {
 .container-form .btn-enviar:hover {
   background: #e39403;
 }
-@media screen and (max-width: 1050px) {
-  .cards p {
-    font-size: 5px;
-  }
-}
+
 @media screen and (max-width: 900px) {
-}
-@media screen and (max-width: 620px) {
+  .contenedor-cards {
+    height: 1300px;
+    grid-template-columns: 1fr;
+  }
 }
